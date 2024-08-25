@@ -6,6 +6,8 @@ namespace Lox_CSharp.CraftingInterpreters
 {
     public class Lox
     {
+        private static bool HadError = false;
+
         public static void Main(string[] args)
         {
             switch (args.Length)
@@ -35,6 +37,7 @@ namespace Lox_CSharp.CraftingInterpreters
                     break;
                 }
                 Run(line);
+                HadError = false;
             }
         }
 
@@ -54,14 +57,15 @@ namespace Lox_CSharp.CraftingInterpreters
             }
         }
 
-        static void error(int line, string message)
+        internal static void Error(int line, string message)
         {
-            report(line, "", message);
+            Report(line, "", message);
         }
 
-        private static void report(int line, string where, string message)
+        private static void Report(int line, string where, string message)
         {
             Console.WriteLine($"[line {line}] Error {where}: {message}");
+            HadError = true;
         }
     }
 }
