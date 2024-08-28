@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lox-CSharp", "Lox-CSharp\Lox-CSharp.csproj", "{199B5D3B-1004-4F6F-9B3C-85F70F68FED8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tools", "tools\tools.csproj", "{54EEC7FC-7BE0-45C3-B264-80FAB4645C61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{199B5D3B-1004-4F6F-9B3C-85F70F68FED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{199B5D3B-1004-4F6F-9B3C-85F70F68FED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{199B5D3B-1004-4F6F-9B3C-85F70F68FED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EEC7FC-7BE0-45C3-B264-80FAB4645C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EEC7FC-7BE0-45C3-B264-80FAB4645C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EEC7FC-7BE0-45C3-B264-80FAB4645C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EEC7FC-7BE0-45C3-B264-80FAB4645C61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

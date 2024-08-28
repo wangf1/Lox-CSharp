@@ -194,7 +194,7 @@ namespace Lox_CSharp.CraftingInterpreters
             return Source[Current + 1];
         }
 
-        private bool IsAlpha(char c) =>
+        private static bool IsAlpha(char c) =>
             (c >= 'a' && c <= 'z') ||
             (c >= 'A' && c <= 'Z') ||
             c == '_';
@@ -207,7 +207,7 @@ namespace Lox_CSharp.CraftingInterpreters
             AddToken(tokenType);
         }
 
-        private bool IsAlphaNumeric(char c)
+        private static bool IsAlphaNumeric(char c)
         {
             return IsAlpha(c) || char.IsDigit(c);
         }
